@@ -1,7 +1,9 @@
+function ProductRow({ row }) {
 
-function ProductRow() {
   return (
-    <div>ProductRow</div>
+    <div>
+        <p>{row.name} <strong>{row.price}</strong> </p>
+    </div>
   )
 }
 

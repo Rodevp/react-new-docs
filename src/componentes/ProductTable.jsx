@@ -1,5 +1,5 @@
+import ProductCategoryRow from "./ProductCategoryRow"
 import ProductRow from "./ProductRow"
-
 
 
 function ProductTable({ products }) {
@@ -9,12 +9,14 @@ function ProductTable({ products }) {
 
     return (
         <div>
+            <ProductCategoryRow  category={fruits[0].category} />
             {
                 fruits.map( fruit => (
                     <ProductRow  row={fruit} />
                 ))
             }
             <hr />
+            <ProductCategoryRow  category={vegetables[0].category} />
             {
                 vegetables.map( vegetable => (
                     <ProductRow  row={vegetable} />
